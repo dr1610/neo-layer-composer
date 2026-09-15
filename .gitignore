@@ -1,0 +1,16 @@
+# Local dependencies and editor files
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local settings and generated output
+.env
+.env.*
+*.log
+*.zip
+neo-layers*.json
+neo-composition*.png

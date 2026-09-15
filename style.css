@@ -1,0 +1,29 @@
+#neo-layer-composer { border:1px solid var(--border-color-primary,#485363); border-radius:10px; margin:8px 0; background:var(--background-fill-primary,#18202d); color:var(--body-text-color,#e6edf7); }
+#neo-layer-composer summary { cursor:pointer; padding:12px 14px; font-weight:650; }
+#neo-layer-composer summary small { margin-left:12px; opacity:.7; font-weight:400; }
+#neo-layer-composer .nlc-body { padding:0 12px 12px; }
+#neo-layer-composer .nlc-toolbar { display:flex; gap:6px; flex-wrap:wrap; margin:8px 0; }
+#neo-layer-composer button { padding:7px 10px; border:1px solid var(--border-color-primary,#536078); background:var(--button-secondary-background-fill,#2b3546); color:inherit; border-radius:6px; cursor:pointer; font-size:13px; line-height:1.4; }
+#neo-layer-composer button:hover { border-color:#55cfc7; }
+#neo-layer-composer button:disabled { opacity:.4; cursor:default; }
+#neo-layer-composer button:focus-visible, #neo-layer-composer input:focus-visible, #neo-layer-composer canvas:focus-visible { outline:2px solid #55d6cf; outline-offset:2px; }
+#neo-layer-composer .nlc-help, #neo-layer-composer .nlc-status { font-size:12px; line-height:1.6; margin:8px 0; }
+#neo-layer-composer .nlc-workspace { display:grid; grid-template-columns:minmax(220px,1fr) 230px; gap:12px; }
+#neo-layer-composer .nlc-stage { height:430px; min-width:0; position:relative; background:#101722; border-radius:8px; overflow:hidden; }
+#neo-layer-composer canvas { display:block; width:100%; height:100%; touch-action:none; }
+#neo-layer-composer aside { min-width:0; font-size:12px; }
+#neo-layer-composer [data-role="layers"] { max-height:180px; overflow:auto; margin-top:8px; }
+#neo-layer-composer .nlc-layer { display:flex; gap:3px; padding:4px; margin-bottom:4px; border:1px solid transparent; border-radius:6px; }
+#neo-layer-composer .nlc-layer button { padding:5px; font-size:11px; flex-shrink:0; }
+#neo-layer-composer .nlc-layer .nlc-layer-name { flex:1; min-width:0; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; text-align:left; }
+#neo-layer-composer .nlc-selected { border-color:#55d6cf; background:#23787122; }
+#neo-layer-composer .nlc-background { padding:8px; opacity:.7; }
+#neo-layer-composer .nlc-fields { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+#neo-layer-composer .nlc-fields label { display:flex; flex-direction:column; gap:4px; }
+#neo-layer-composer input[type="number"] { width:100%; box-sizing:border-box; padding:6px; border:1px solid #617089; border-radius:4px; color:inherit; background:var(--input-background-fill,#121b29); }
+#neo-layer-composer .nlc-primary { background:#146e68; color:white; border-color:#48bdb4; margin-left:auto; font-weight:650; }
+#neo-layer-composer .nlc-error { color:#f48a80; }
+#neo-layer-composer.nlc-expanded { position:fixed; inset:18px; z-index:1000; overflow:auto; box-shadow:0 0 0 30px #0009; }
+#neo-layer-composer.nlc-expanded .nlc-stage { height:calc(100vh - 260px); min-height:300px; }
+#neo-layer-composer.nlc-busy .nlc-workspace, #neo-layer-composer.nlc-busy .nlc-toolbar { pointer-events:none; opacity:.65; }
+@media(max-width:700px) { #neo-layer-composer .nlc-workspace { grid-template-columns:1fr; } #neo-layer-composer .nlc-stage { height:360px; } }

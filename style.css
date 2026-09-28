@@ -27,3 +27,12 @@
 #neo-layer-composer.nlc-expanded .nlc-stage { height:calc(100vh - 260px); min-height:300px; }
 #neo-layer-composer.nlc-busy .nlc-workspace, #neo-layer-composer.nlc-busy .nlc-toolbar { pointer-events:none; opacity:.65; }
 @media(max-width:700px) { #neo-layer-composer .nlc-workspace { grid-template-columns:1fr; } #neo-layer-composer .nlc-stage { height:360px; } }
+.nlc-reverse { margin:8px 0; padding:10px; border:1px solid #617089; border-radius:8px; }
+.nlc-reverse summary { cursor:pointer; font-weight:600; }
+.nlc-reverse-body p { font-size:13px; margin:8px 0; }
+.nlc-reverse-buttons { display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
+.nlc-reverse button { padding:8px 12px; border:1px solid #617089; border-radius:6px; background:var(--button-secondary-background-fill,#2b3546); color:var(--body-text-color,#eee); }
+.nlc-reverse button[aria-pressed="true"] { background:#146e68; color:white; border-color:#55d6cf; }
+.nlc-reverse button:focus-visible { outline:2px solid #55d6cf; outline-offset:2px; }
+.nlc-reverse canvas { max-width:100%; max-height:460px; object-fit:contain; display:block; margin:auto; }
+.nlc-reverse canvas[hidden] { display:none; }
